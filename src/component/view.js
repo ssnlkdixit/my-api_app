@@ -40,18 +40,18 @@ class PostList extends Component {
         console.log(posts)
 
 		return (
-			<div class="flex justify-between ...">
-                <cenetr>
+			<div className="flex justify-between ...">
+                
 					
 
 					
                 
 				<h1>List of<Badge pill bg="light" text="dark"> Users</Badge></h1>
-                </cenetr>
+                
                 
 				{posts.length
 					? posts.map(post => <ul key = {post.id}>
-						<cenetr>
+						
 						<Card className="text-center">
                        <Card.Img variant="top" src="holder.js/100px180" />
                          <Card.Body>
@@ -63,14 +63,13 @@ class PostList extends Component {
                              <Button variant="primary">Go somewhere</Button>
                           </Card.Body>
                        </Card>
-					   </cenetr>
+					
                         
                        
                         
                     </ul>)
                    
-          : null}
-
+         
           
           <Button  
           onClick = {()=>this.setState({page:this.state.page+1})}>
